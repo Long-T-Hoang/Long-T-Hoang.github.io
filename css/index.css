@@ -323,7 +323,7 @@ nav a:link
 
 nav a:visited
 {
-    color: white;
+    color: purple;
 }
 
 nav a:focus
@@ -561,7 +561,7 @@ main a:active
 
     main
     {
-        padding-top: 4em;
+        padding-top: 1em;
         margin: 5% 20%;
     }
 }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Long Hoang Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1>
+            <a href = "index.html">Long Hoang</a>
+        </h1>
+
+        <nav>
+            <ul>
+                <li><a href = "index.html#about">About</a></li>
+                <li><a href = "index.html#projects">Projects</a></li>
+                <li><a href = "media/LongHoang_Coop_Resume.pdf" target = _blank>Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>
+            <span style = "font-family: 'Girassol', cursive;">Spear Chaser</span>
+        </h2>
+
+        <section id="projects">
+            
+            <p>
+                Spear Chaser is an arcadey browser game, made using JavaScript and PixiJS, that combines pinball with bullet hell.
+                In this game, the player must survive as long as possible by launching themselves at walls and bouncing
+                off of them to avoid bullets, defeat enemies and gain points. 
+            </p>
+
+            <p>
+                This game is a solo project, thus, both the code and art assets are made by myself. Sound effects can be
+                found here: <a href = "http://soundbible.com/">http://soundbible.com/</a>
+            </p>
+
+            <p>
+                Thanks to this project, I was able to  broaden my knowledge on PixiJS and JavaScript, throughout the project,
+                as well as by overcoming some challenges. One of such is the performance optimization of the game. 
+            </p>
+
+            <p>
+                At the later
+                stages of the project, I realized that the game was slower and the framerate was also much lower at later rounds
+                of the game. This was due to the large number of enemies on the screen, as well as mouse inputs getting registered
+                multiple times in one click. Cycling through the enemies, updating them and processing mouse inputs obviously 
+                put a dent on the game performance. With the former being inevitable due to the nature of the game, I had to switch 
+                the event listeners to register when the mouse is clicked, not the whole duration of the click.
+            </p>
+
+            <a href = "https://people.rit.edu/lth1092/235/Project3/">Link</a>
+
+            <div id = "pictures">
+                <picture>
+                    <source srcset = "media/spear-chaser-title-300px.PNG" media = "(max-width: 700px)">
+                    <source srcset = "media/spear-chaser-title-600px.PNG">
+                    <img src="media/spear-chaser-title-600px.PNG" alt = "Title for the game Spear Chaser">
+                </picture>
+                
+                <picture>
+                    <source srcset = "media/spear-chaser-gameplay-300px.PNG" media = "(max-width: 700px)">
+                    <source srcset = "media/spear-chaser-gameplay-600px.png">
+                    <img src="media/spear-chaser-gameplay-600px.png" 
+                    alt = "The player character lunges at the enemies while avoding bullets">
+                </picture>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div id = "footer-wrapper">
+            <div id = "contact">
+                <h2>
+                    Contact
+                </h2>
+
+                <ul>
+                    <li>
+                        <p>Email: </p>
+                        <a href = "mailto:longhoang7200@gmail.com">longhoang7200@gmail.com</a>
+                    </li>
+
+                    <li>
+                        <p>Phone number: </p>
+                        <a href = "tel:+1585-754-4378">585-754-4378</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id = "website-links">
+                <h2>
+                    Follow me
+                </h2>
+
+                <ul>
+                    <li>
+                        <a href = "https://github.com/Vestroie">
+                            <img src = "media/GitHub-Mark-32px.png" alt = "GitHub link">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href = "https://www.linkedin.com/in/longtuanhoang/">
+                            <img src = "media/LI-In-Bug-Small.png" alt = "LinkedIn link">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

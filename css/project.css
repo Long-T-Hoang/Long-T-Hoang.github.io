@@ -1,0 +1,28 @@
+main
+{
+   padding: 0; 
+}
+
+#pictures
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#pictures picture
+{
+    padding: 0.5em;
+}
+
+#pictures picture img
+{
+    outline: 2px solid black;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 200%;
+    margin: 0;
+    margin-bottom: 1em;
+}
