@@ -200,8 +200,12 @@ h3:before
 
 li p
 {
-    text-indent: 2em;
     margin: 2em 0.5em;
+}
+
+.first-para
+{
+    text-indent: 2em;
 }
 
 #projects li:nth-last-child(1)
