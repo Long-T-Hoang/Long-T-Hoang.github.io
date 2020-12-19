@@ -167,43 +167,12 @@ main a
     border-bottom: 2px solid black;
 }
 
-h3
-{
-    margin: 0;
-    margin-bottom: 1em;
-    margin-left: -1em;
-    font-size: 120%;
-}
-
-h3 span
-{
-    width: 100%;
-    border-bottom: 2px solid black;
-}
-
-h3:before 
-{
-    content: "\00BB \0020";
-}
-
-#projects>ul
-{
-    display: flex;
-    flex-direction: column;
-}
-
-#projects>ul>li
-{
-    border-radius: 0.2em;
-    margin-bottom: 4em;
-}
-
 li p
 {
     margin: 2em 0.5em;
 }
 
-.first-para
+#projects>p:first-of-type
 {
     text-indent: 2em;
 }
@@ -216,19 +185,42 @@ li p
 #projects img
 {
     max-width: 100%;
-    margin: 2em auto 0;
     border-radius: 0.1em;
 }
 
-ul ul
-{
-    list-style-type: square;
-    margin-left: 2em;
+#projects ul{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 350px 300px auto;
 }
 
-ul ul li
+#projects ul li{
+    position: relative;
+    justify-self: center;
+    align-self: center;
+}
+
+h3
 {
-    margin-top: 0.3em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    background: #3ba0ff;
+    border: 2px solid orange;
+    padding: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+#projects img{
+    width: 300px;
+    filter: brightness(0.7);
+}
+
+#projects img:hover{
+    filter: brightness(0.3) blur(3px);
 }
 
 /* Footer */
@@ -349,45 +341,6 @@ nav a:active
     color: yellow;
 }
 
-main a
-{
-    padding: 0.2em;
-    border-radius: 0.2em;
-    margin: 0;
-}
-
-main a::before
-{
-    content: "\00BB";
-}
-
-main a:link
-{
-    color: black;
-}
-
-main a:visited
-{
-    color: purple;
-}
-
-main a:focus
-{
-    color: white;
-    background-color: black;
-}
-
-main a:hover
-{
-    color: white;
-    background-color: black;
-}
-
-main a:active
-{
-    border: 2px solid red;
-}
-
 #contact a:link
 {
     border-radius: 0.1em;
@@ -500,12 +453,18 @@ main a:active
     {
         padding: 2em 0;
         margin: 5% 10%;
+        margin-bottom: 0;
         grid-template-rows: auto auto;
     }
 
     #website-links li
     {
         margin: 0 1em;
+    }
+
+    #projects ul{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
 
@@ -524,7 +483,7 @@ main a:active
     main
     {
         margin: 5% 10%;
-        padding-bottom: 4em;
+        padding-bottom: 0;
     }
 
     section
@@ -548,10 +507,18 @@ main a:active
         margin-top: 0;
     }
 
+    #projects{
+        padding: 0 30px;
+    }
+
     #projects h2
     {
         margin-left: -2em;
         margin-right: -2em;
+    }
+
+    #projects img{
+        width: 500px;
     }
 }
 

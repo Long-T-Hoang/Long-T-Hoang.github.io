@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>The Golden Ankh</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+    <link rel="stylesheet" type="text/css" href="css/goldenankh.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1>
+            <a href = "index.html">Long Hoang</a>
+        </h1>
+
+        <nav>
+            <ul>
+                <li><a href = "index.html#about">About</a></li>
+                <li><a href = "index.html#projects">Projects</a></li>
+                <li><a href = "media/LongHoang_Coop_Resume.pdf" target = _blank>Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>
+            <span>The Golden Ankh</span>
+        </h2>
+
+        <section id="projects">
+            <p>
+                The Golden Ankh is an adventure/puzzle-solving game project made using C# and the MonoGame framework by a group of 
+                three. In this game, the player possess a magical boomerang that can not only be thrown and return to you, but you 
+                can also switch
+                your position with it. With this magical artifact, the player will journey into a mythical pyramid filled with traps
+                and mummies in order to find the Golden Ankh.
+            </p>
+
+            <p>
+                For this project, I am responsible for making most of the sprites, including the main character, the mummies,
+                the platform tiles and the starting screen animations. I also worked on implementing the basic physics 
+                and collison systems that the game uses.
+            </p>
+
+            <p>
+                This is one of my earliest project, so I was able to learnt a lot on working in a team, how to use the 
+                MonoGame framework, and some coding principles that I still uses. This is thanks to the challenges that 
+                I encountered throughout the project, one of which was a big problem for the game when I was working on 
+                collision. 
+            </p>
+
+            <p>
+                I tried to make a type of tile that can be used for all situations instead of utilizing classes. 
+                This cause many errors like the player character phasing through walls and floors, or them getting
+                teleported to the top of a platform wherever they collide with them. 
+            </p>
+
+            <a href = "https://kgcoe-git.rit.edu/txw4522/thegoldenankh">GitLab Link</a>
+
+            <picture>
+                <source srcset = "media/golden-ankh-small.png" media = "(max-width: 700px)">
+                <source srcset = "media/golden-ankh-medium.png">
+                <img src = "media/golden-ankh-medium.png" 
+                alt = "A stage from the Golden Ankh">
+            </picture>
+        </section>
+    </main>
+
+    <footer>
+        <div id = "footer-wrapper">
+            <div id = "contact">
+                <h2>
+                    Contact
+                </h2>
+
+                <ul>
+                    <li>
+                        <p>Email: </p>
+                        <a href = "mailto:longhoang7200@gmail.com">longhoang7200@gmail.com</a>
+                    </li>
+
+                    <li>
+                        <p>Phone number: </p>
+                        <a href = "tel:+1585-957-1063">585-957-1063</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id = "website-links">
+                <h2>
+                    Follow me
+                </h2>
+
+                <ul>
+                    <li>
+                        <a href = "https://github.com/Long-T-Hoang" target="_blank">
+                            <img src = "media/GitHub-Mark-32px.png" alt = "GitHub link">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href = "https://www.linkedin.com/in/longtuanhoang/" target="_blank">
+                            <img src = "media/LI-In-Bug-Small.png" alt = "LinkedIn link">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

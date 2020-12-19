@@ -14,6 +14,15 @@
     outline: 2px solid black;
 }
 
+#projects img{
+    margin: 0 auto;
+    filter:  none;
+}
+
+#projects img:hover{
+    filter: none;
+}
+
 h2
 {
     text-align: center;
@@ -22,10 +31,56 @@ h2
     margin-bottom: 1em;
 }
 
+h3:before 
+{
+    content: "\00BB \0020";
+}
+
 @media (min-width: 600px)
 {
     #pictures
     {
         flex-direction: row;
+        justify-content: space-around;
     }
 }
+
+main a
+{
+    padding: 0.2em;
+    border-radius: 0.2em;
+    margin: 0;
+}
+
+main a::before
+{
+    content: "\00BB";
+}
+
+main a:link
+{
+    color: black;
+}
+
+main a:visited
+{
+    color: purple;
+}
+
+main a:focus
+{
+    color: white;
+    background-color: black;
+}
+
+main a:hover
+{
+    color: white;
+    background-color: black;
+}
+
+main a:active
+{
+    border: 2px solid red;
+}
+

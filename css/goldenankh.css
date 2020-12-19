@@ -1,0 +1,7 @@
+h2 span{
+    padding: 10px;
+    background-color: brown;
+    color: gold;
+    border: 5px solid goldenrod;
+    border-radius: 5px;
+}

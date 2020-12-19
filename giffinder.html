@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>GIF Finder</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+    <link rel="stylesheet" type="text/css" href="css/giffinder.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1>
+            <a href = "index.html">Long Hoang</a>
+        </h1>
+
+        <nav>
+            <ul>
+                <li><a href = "index.html#about">About</a></li>
+                <li><a href = "index.html#projects">Projects</a></li>
+                <li><a href = "media/LongHoang_Coop_Resume.pdf" target = _blank>Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+        <h2>
+            <span>GIF Finder</span>
+        </h2>
+
+        <section id="projects">
+            <p>
+                GIF Finder is a website is made using JavaScript, GIPHY API and Shareholic API. The website can be used to browser
+                GIFs using GIPHY API, save them to your favorite "Local Storage" and view them later, copy the link to your 
+                clipboard, sharing them on Twitter and Facebook using Shareholic API.
+            </p>
+
+            <p>
+                Most of the codes were written by myself based on an earlier project, so was some of the SVG codes.
+            </p>
+
+            <p>
+                Since this project is mainly JavaScript, I learnt a lot about it, mainly on getting inputs, "for of" and 
+                "for in" loops and local storage. 
+            </p>
+
+            <p>
+                The biggest challenge I encountered was the "Load more" function. For 
+                this function, I had to create a new variable to keep track of the current number of results, and add more to
+                it whenever the button is clicked. After that, the website send a request for more GIFs from GIPHY
+                with that number as the offset
+                , remove the load more button and add the new results to the old result array. 
+            </p>
+
+            <a href = "https://people.rit.edu/lth1092/235/Project2/">Link</a>
+
+            <picture>
+                <source srcset = "media/GIF-Finder-small.PNG" media = "(max-width: 500px)">
+                <source srcset = "media/GIF-Finder-medium.PNG" media = "(max-width: 768px)">
+                <source srcset = "media/GIF-Finder-large.PNG">
+                <img src="media/GIF-Finder-large.PNG" alt = "GIF Finder interface">
+            </picture>
+        </section>
+    </main>
+
+    <footer>
+        <div id = "footer-wrapper">
+            <div id = "contact">
+                <h2>
+                    Contact
+                </h2>
+
+                <ul>
+                    <li>
+                        <p>Email: </p>
+                        <a href = "mailto:longhoang7200@gmail.com">longhoang7200@gmail.com</a>
+                    </li>
+
+                    <li>
+                        <p>Phone number: </p>
+                        <a href = "tel:+1585-957-1063">585-957-1063</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id = "website-links">
+                <h2>
+                    Follow me
+                </h2>
+
+                <ul>
+                    <li>
+                        <a href = "https://github.com/Long-T-Hoang" target="_blank">
+                            <img src = "media/GitHub-Mark-32px.png" alt = "GitHub link">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href = "https://www.linkedin.com/in/longtuanhoang/" target="_blank">
+                            <img src = "media/LI-In-Bug-Small.png" alt = "LinkedIn link">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

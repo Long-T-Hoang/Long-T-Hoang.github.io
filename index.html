@@ -58,129 +58,38 @@
 
             <ul>
                 <li>
-                    <h3>
-                        <span>Spear Chaser</span>
-                    </h3>
-
-                    <p class="first-para">
-                        Spear Chaser is an arcadey browser game, made using JavaScript and PixiJS, that combines pinball with bullet hell.
-                        In this game, the player must survive as long as possible by launching themselves at walls and bouncing
-                        off of them to avoid bullets, defeat enemies and gain points. 
-                    </p>
-
-                    <p>
-                        This game is a solo project, thus, both the code and art assets are made by myself. Sound effects can be
-                        found here: <a href = "http://soundbible.com/">http://soundbible.com/</a>
-                    </p>
-
-                    <p>
-                        Thanks to this project, I was able to  broaden my knowledge on PixiJS and JavaScript, throughout the project,
-                        as well as by overcoming some challenges. One of such is the performance optimization of the game. 
-                    </p>
-
-                    <p>
-                        At the later
-                        stages of the project, I realized that the game was slower and the framerate was also much lower at later rounds
-                        of the game. This was due to the large number of enemies on the screen, as well as mouse inputs getting registered
-                        multiple times in one click. Cycling through the enemies, updating them and processing mouse inputs obviously 
-                        put a dent on the game performance. With the former being inevitable due to the nature of the game, I had to switch 
-                        the event listeners to register when the mouse is clicked, not the whole duration of the click.
-                    </p>
-
-                    <a href = "https://people.rit.edu/lth1092/235/Project3/">Link</a>
-
-                    <picture>
-                        <source srcset = "media/spear-chaser-title-300px.PNG" media = "(max-width: 700px)">
-                        <source srcset = "media/spear-chaser-title-600px.PNG">
-                        <img src="media/spear-chaser-title-600px.PNG" alt = "Title for the game Spear Chaser">
-                    </picture>
-                    
-                    <picture>
-                        <source srcset = "media/spear-chaser-gameplay-300px.PNG" media = "(max-width: 700px)">
-                        <source srcset = "media/spear-chaser-gameplay-600px.png">
-                        <img src="media/spear-chaser-gameplay-600px.png" 
-                        alt = "The player character lunges at the enemies while avoding bullets">
-                    </picture>
+                    <a href="spearchaser.html">
+                        <h3 >Spear Chaser</h3>
+                        <picture>
+                            <source srcset = "media/spear-chaser-title-300px.PNG" media = "(max-width: 700px)">
+                            <source srcset = "media/spear-chaser-title-600px.PNG">
+                            <img src="media/spear-chaser-title-600px.PNG" alt = "Title for the game Spear Chaser">
+                        </picture>
+                    </a>
                 </li>
 
                 <li>
-                    <h3>
-                        <span>The Golden Ankh</span>
-                    </h3>
-
-                    <p class="first-para">
-                        The Golden Ankh is an adventure/puzzle-solving game project made using C# and the MonoGame framework by a group of 
-                        three. In this game, the player possess a magical boomerang that can not only be thrown and return to you, but you 
-                        can also switch
-                        your position with it. With this magical artifact, the player will journey into a mythical pyramid filled with traps
-                        and mummies in order to find the Golden Ankh.
-                    </p>
-
-                    <p>
-                        For this project, I am responsible for making most of the sprites, including the main character, the mummies,
-                        the platform tiles and the starting screen animations. I also worked on implementing the basic physics 
-                        and collison systems that the game uses.
-                    </p>
-
-                    <p>
-                        This is one of my earliest project, so I was able to learnt a lot on working in a team, how to use the 
-                        MonoGame framework, and some coding principles that I still uses. This is thanks to the challenges that 
-                        I encountered throughout the project, one of which was a big problem for the game when I was working on 
-                        collision. 
-                    </p>
-
-                    <p>
-                        I tried to make a type of tile that can be used for all situations instead of utilizing classes. 
-                        This cause many errors like the player character phasing through walls and floors, or them getting
-                        teleported to the top of a platform wherever they collide with them. 
-                    </p>
-
-                    <a href = "https://kgcoe-git.rit.edu/txw4522/thegoldenankh">GitLab Link</a>
-
-                    <picture>
-                        <source srcset = "media/golden-ankh-small.png" media = "(max-width: 700px)">
-                        <source srcset = "media/golden-ankh-medium.png">
-                        <img src = "media/golden-ankh-medium.png" 
-                        alt = "A stage from the Golden Ankh">
-                    </picture>
+                    <a href="goldenankh.html">
+                        <h3>The Golden Ankh</h3>
+                        <picture>
+                            <source srcset = "media/golden-ankh-small.png" media = "(max-width: 700px)">
+                            <source srcset = "media/golden-ankh-medium.png">
+                            <img src = "media/golden-ankh-medium.png" 
+                            alt = "A stage from the Golden Ankh">
+                        </picture>
+                    </a>
                 </li>
 
                 <li>
-                    <h3>
-                        <span>GIF Finder</span>
-                    </h3>
-
-                    <p class="first-para">
-                        GIF Finder is a website is made using JavaScript, GIPHY API and Shareholic API. The website can be used to browser
-                        GIFs using GIPHY API, save them to your favorite "Local Storage" and view them later, copy the link to your 
-                        clipboard, sharing them on Twitter and Facebook using Shareholic API.
-                    </p>
-
-                    <p>
-                        Most of the codes were written by myself based on an earlier project, so was some of the SVG codes.
-                    </p>
-
-                    <p>
-                        Since this project is mainly JavaScript, I learnt a lot about it, mainly on getting inputs, "for of" and 
-                        "for in" loops and local storage. 
-                    </p>
-
-                    <p>
-                        The biggest challenge I encountered was the "Load more" function. For 
-                        this function, I had to create a new variable to keep track of the current number of results, and add more to
-                        it whenever the button is clicked. After that, the website send a request for more GIFs from GIPHY
-                        with that number as the offset
-                        , remove the load more button and add the new results to the old result array. 
-                    </p>
-
-                    <a href = "https://people.rit.edu/lth1092/235/Project2/">Link</a>
-
-                    <picture>
-                        <source srcset = "media/GIF-Finder-small.PNG" media = "(max-width: 500px)">
-                        <source srcset = "media/GIF-Finder-medium.PNG" media = "(max-width: 768px)">
-                        <source srcset = "media/GIF-Finder-large.PNG">
-                        <img src="media/GIF-Finder-large.PNG" alt = "GIF Finder interface">
-                    </picture>
+                    <a href="giffinder.html">
+                        <h3>GIF Finder</h3>
+                        <picture>
+                            <source srcset = "media/GIF-Finder-small.PNG" media = "(max-width: 500px)">
+                            <source srcset = "media/GIF-Finder-medium.PNG" media = "(max-width: 768px)">
+                            <source srcset = "media/GIF-Finder-large.PNG">
+                            <img src="media/GIF-Finder-large.PNG" alt = "GIF Finder interface">
+                        </picture>
+                    </a>
                 </li>
 
             </ul>
@@ -214,13 +123,13 @@
 
                 <ul>
                     <li>
-                        <a href = "https://github.com/Vestroie">
+                        <a href = "https://github.com/Long-T-Hoang" target="_blank">
                             <img src = "media/GitHub-Mark-32px.png" alt = "GitHub link">
                         </a>
                     </li>
 
                     <li>
-                        <a href = "https://www.linkedin.com/in/longtuanhoang/">
+                        <a href = "https://www.linkedin.com/in/longtuanhoang/" target="_blank">
                             <img src = "media/LI-In-Bug-Small.png" alt = "LinkedIn link">
                         </a>
                     </li>
