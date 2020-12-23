@@ -9,6 +9,23 @@
     padding: 0.5em;
 }
 
+#projects ul
+{
+    display: block;
+    margin-bottom: 2em;
+}
+
+#projects ul li
+{
+    margin-left: 2em;
+    list-style-type: disc;
+}
+
+#projects ul li p
+{
+    margin: 0.5em 0;
+}
+
 #pictures picture img
 {
     outline: 2px solid black;

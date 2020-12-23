@@ -37,27 +37,45 @@
 
         <section id="projects">
             <p>
-                GIF Finder is a website is made using JavaScript, GIPHY API and Shareholic API. The website can be used to browser
-                GIFs using GIPHY API, save them to your favorite "Local Storage" and view them later, copy the link to your 
-                clipboard, sharing them on Twitter and Facebook using Shareholic API.
+                Dreamshaper is a 2.5D puzzle platforming game, made using Unity3D in a team of two in 48 hours, as part of the RIT Game Dev Club's Pajama Jam, with the 
+                theme "Dream." In this game, the player must utilize their ability to controls objects in their dream to make their way 
+                to then end of the dream and wake up. The player can manipulate the size, move some objects, as well as changing the direction of gravity on themselves.
+                The combination of these mechanics helped create some interesting levels where they must utilize all three power to make it to the goal.
             </p>
 
             <p>
-                Most of the codes were written by myself based on an earlier project, so was some of the SVG codes.
+                I mostly worked on the movement system, as well as implementing most of the main mechanics like manipulate object size and gravity. I also polished the game 
+                a bit at the end by adding some simple animations using Unity's AnimationCurve and Coroutine, as well as adding sound effects and post processing. Due to time
+                constraints. my teammate was only able to work on the "moving objects" mechanic, gave me feedbacks on some of the design choices I made, and designed most of the levels.
             </p>
 
             <p>
-                Since this project is mainly JavaScript, I learnt a lot about it, mainly on getting inputs, "for of" and 
-                "for in" loops and local storage. 
+                I learnt a lot from this project, mostly on the polishing side. The most significant of them is using AnimationCurve and Coroutines to make simple animations, which
+                I'm in the process of adding to my newer projects. Moreover, I also got to tried making animations using Timeline on Unity.
             </p>
 
             <p>
-                The biggest challenge I encountered was the "Load more" function. For 
-                this function, I had to create a new variable to keep track of the current number of results, and add more to
-                it whenever the button is clicked. After that, the website send a request for more GIFs from GIPHY
-                with that number as the offset
-                , remove the load more button and add the new results to the old result array. 
+                The biggest problem I encountered is to make the "shifting gravity" mechanic compatible with other parts of the game. Implementing it is as simple as adding force 
+                in different directions using the Rigidbody components. I only added the gravity shifting mechanic after adding movement and some player animations. This cause some small issues
+                with those previous features based on the current orientation of the player avatar. But there was also some game breaking problems like the player being able to jump infinitely 
+                when the gravity is pointing in the two sides, instead of up or down. It took a lot of time for me to revised old codes because the new mechanic weren't accounted for 
+                when I was programming them, as well as them not being robust enough.
             </p>
+
+            <p>Credits:</p>
+            <ul>
+
+                <li><p>Roblox death sfx: <a href="https://youtu.be/3w-2gUSus34">https://youtu.be/3w-2gUSus34</a></p></li>
+                
+                <li><p>Player jump/hit sfx: <a href="https://youtu.be/xz-h8Yk9D2U">https://youtu.be/xz-h8Yk9D2U</a></p></li>
+                
+                <li><p>Cube hit sfx: <a href="https://youtu.be/3RMdpj7mgDU">https://youtu.be/3RMdpj7mgDU</a></p></li>
+                
+                <li><p>Endscreen alarm clock sfx: <a href="https://youtu.be/r9FNoW8arhY">https://youtu.be/r9FNoW8arhY</a></p></li>
+                
+                <li><p>Endscreen yawn sfx: <a href="https://youtu.be/I4mboRaSfdk">https://youtu.be/I4mboRaSfdk</a></p></li>
+
+            </ul>
 
             <a href = "https://vestroie.itch.io/dreamshaper" target="_blank">Link</a>
 
