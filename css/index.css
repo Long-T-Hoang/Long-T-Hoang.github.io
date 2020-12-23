@@ -197,7 +197,7 @@ li p
 #projects ul li{
     position: relative;
     justify-self: center;
-    align-self: center;
+    align-self: stretch;
 }
 
 h3
@@ -216,6 +216,7 @@ h3
 
 #projects img{
     width: 300px;
+    height: 300px;
     filter: brightness(0.7);
 }
 
@@ -517,8 +518,13 @@ nav a:active
         margin-right: -2em;
     }
 
+}
+
+@media (min-width: 1400px)
+{
     #projects img{
         width: 500px;
+        height: 500px;
     }
 }
 

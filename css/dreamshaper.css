@@ -1,0 +1,7 @@
+h2 span{
+    padding: 10px;
+    background-color:rgb(50, 34, 127);
+    color:rgb(225, 114, 73);
+    border: 5px solid rgb(253, 62, 103);
+    border-radius: 5px;
+}

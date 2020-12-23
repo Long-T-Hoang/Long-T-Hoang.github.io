@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <title>Spear Chaser</title>
+    <title>NieR Visualizer</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/project.css">
-    <link rel="stylesheet" type="text/css" href="css/spearchaser.css">
+    <link rel="stylesheet" type="text/css" href="css/nier-visualizer.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -31,56 +30,56 @@
         </nav>
     </header>
 
-    <main>
-
+    <main> 
         <h2>
-            <span>Spear Chaser</span>
+            <span>NieR Visualizer</span>
         </h2>
 
         <section id="projects">
-            
             <p>
-                Spear Chaser is an arcadey browser game, made using JavaScript and PixiJS, that combines pinball with bullet hell.
-                In this game, the player must survive as long as possible by launching themselves at walls and bouncing
-                off of them to avoid bullets, defeat enemies and gain points. 
+                GIF Finder is a website is made using JavaScript, GIPHY API and Shareholic API. The website can be used to browser
+                GIFs using GIPHY API, save them to your favorite "Local Storage" and view them later, copy the link to your 
+                clipboard, sharing them on Twitter and Facebook using Shareholic API.
             </p>
 
             <p>
-                This game is a solo project, thus, both the code and art assets are made by myself. Sound effects can be
-                found here: <a href = "http://soundbible.com/">http://soundbible.com/</a>
+                Most of the codes were written by myself based on an earlier project, so was some of the SVG codes.
             </p>
 
             <p>
-                Thanks to this project, I was able to  broaden my knowledge on PixiJS and JavaScript, throughout the project,
-                as well as by overcoming some challenges. One of such is the performance optimization of the game. 
+                Since this project is mainly JavaScript, I learnt a lot about it, mainly on getting inputs, "for of" and 
+                "for in" loops and local storage. 
             </p>
 
             <p>
-                At the later
-                stages of the project, I realized that the game was slower and the framerate was also much lower at later rounds
-                of the game. This was due to the large number of enemies on the screen, as well as mouse inputs getting registered
-                multiple times in one click. Cycling through the enemies, updating them and processing mouse inputs obviously 
-                put a dent on the game performance. With the former being inevitable due to the nature of the game, I had to switch 
-                the event listeners to register when the mouse is clicked, not the whole duration of the click.
+                The biggest challenge I encountered was the "Load more" function. For 
+                this function, I had to create a new variable to keep track of the current number of results, and add more to
+                it whenever the button is clicked. After that, the website send a request for more GIFs from GIPHY
+                with that number as the offset
+                , remove the load more button and add the new results to the old result array. 
             </p>
 
-            <a href = "https://people.rit.edu/lth1092/235/Project3/" target="_blank">Link</a>
+            <a href = "https://people.rit.edu/lth1092/330/Project2/" target="_blank">Link</a>
 
-            <div id = "pictures">
+            <div id="img-wrap">
                 <picture>
-                    <source srcset = "media/spear-chaser-title-300px.PNG" media = "(max-width: 700px)">
-                    <source srcset = "media/spear-chaser-title-600px.PNG">
-                    <img src="media/spear-chaser-title-600px.PNG" alt = "Title for the game Spear Chaser">
+                    <source srcset = "media/nier-visualizer-normal-300px.png" media = "(max-width: 500px)">
+                    <source srcset = "media/nier-visualizer-normal-600px.png" media = "(max-width: 768px)">
+                    <img src="media/nier-visualizer-normal-600px.png" alt = "NieR visualizer at normal mode">
                 </picture>
-                
+
                 <picture>
-                    <source srcset = "media/spear-chaser-gameplay-300px.PNG" media = "(max-width: 700px)">
-                    <source srcset = "media/spear-chaser-gameplay-600px.png">
-                    <img src="media/spear-chaser-gameplay-600px.png" 
-                    alt = "The player character lunges at the enemies while avoding bullets">
+                    <source srcset = "media/nier-visualizer-emil-300px.png" media = "(max-width: 500px)">
+                    <source srcset = "media/nier-visualizer-emil-600px.png" media = "(max-width: 768px)">
+                    <img src="media/nier-visualizer-emil-600px.png" alt = "NieR visualizer at Emil mode">
+                </picture>
+
+                <picture>
+                    <source srcset = "media/nier-visualizer-gradient-300px.png" media = "(max-width: 500px)">
+                    <source srcset = "media/nier-visualizer-gradient-600px.png" media = "(max-width: 768px)">
+                    <img src="media/nier-visualizer-gradient-600px.png" alt = "NieR visualizer at gradient mode">
                 </picture>
             </div>
-
         </section>
     </main>
 
@@ -99,7 +98,7 @@
 
                     <li>
                         <p>Phone number: </p>
-                        <a href = "tel:+1585-754-4378">585-754-4378</a>
+                        <a href = "tel:+1585-957-1063">585-957-1063</a>
                     </li>
                 </ul>
             </div>

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <title>The Golden Ankh</title>
+    <title>Dreamshaper</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/project.css">
-    <link rel="stylesheet" type="text/css" href="css/goldenankh.css">
+    <link rel="stylesheet" type="text/css" href="css/dreamshaper.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
@@ -30,46 +30,41 @@
         </nav>
     </header>
 
-    <main>
+    <main> 
         <h2>
-            <span>The Golden Ankh</span>
+            <span>Dreamshaper</span>
         </h2>
 
         <section id="projects">
             <p>
-                The Golden Ankh is an adventure/puzzle-solving game project made using C# and the MonoGame framework by a group of 
-                three. In this game, the player possess a magical boomerang that can not only be thrown and return to you, but you 
-                can also switch
-                your position with it. With this magical artifact, the player will journey into a mythical pyramid filled with traps
-                and mummies in order to find the Golden Ankh.
+                GIF Finder is a website is made using JavaScript, GIPHY API and Shareholic API. The website can be used to browser
+                GIFs using GIPHY API, save them to your favorite "Local Storage" and view them later, copy the link to your 
+                clipboard, sharing them on Twitter and Facebook using Shareholic API.
             </p>
 
             <p>
-                For this project, I am responsible for making most of the sprites, including the main character, the mummies,
-                the platform tiles and the starting screen animations. I also worked on implementing the basic physics 
-                and collison systems that the game uses.
+                Most of the codes were written by myself based on an earlier project, so was some of the SVG codes.
             </p>
 
             <p>
-                This is one of my earliest project, so I was able to learnt a lot on working in a team, how to use the 
-                MonoGame framework, and some coding principles that I still uses. This is thanks to the challenges that 
-                I encountered throughout the project, one of which was a big problem for the game when I was working on 
-                collision. 
+                Since this project is mainly JavaScript, I learnt a lot about it, mainly on getting inputs, "for of" and 
+                "for in" loops and local storage. 
             </p>
 
             <p>
-                I tried to make a type of tile that can be used for all situations instead of utilizing classes. 
-                This cause many errors like the player character phasing through walls and floors, or them getting
-                teleported to the top of a platform wherever they collide with them. 
+                The biggest challenge I encountered was the "Load more" function. For 
+                this function, I had to create a new variable to keep track of the current number of results, and add more to
+                it whenever the button is clicked. After that, the website send a request for more GIFs from GIPHY
+                with that number as the offset
+                , remove the load more button and add the new results to the old result array. 
             </p>
 
-            <a href = "https://kgcoe-git.rit.edu/txw4522/thegoldenankh" target="_blank">GitLab Link</a>
+            <a href = "https://vestroie.itch.io/dreamshaper" target="_blank">Link</a>
 
             <picture>
-                <source srcset = "media/golden-ankh-small.png" media = "(max-width: 700px)">
-                <source srcset = "media/golden-ankh-medium.png">
-                <img src = "media/golden-ankh-medium.png" 
-                alt = "A stage from the Golden Ankh">
+                <source srcset = "media/dreamshaper-300px.png" media = "(max-width: 500px)">
+                <source srcset = "media/dreamshaper-600px.png" media = "(max-width: 768px)">
+                <img src="media/dreamshaper-600px.png" alt = "Dreamshaper gravity shifting mechanic">
             </picture>
         </section>
     </main>

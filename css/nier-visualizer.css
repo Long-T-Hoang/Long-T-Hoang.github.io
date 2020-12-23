@@ -1,0 +1,40 @@
+h2 span{
+    padding: 10px;
+    background-color:rgb(191, 186, 157);
+    color:rgb(13, 12, 10);
+    border: 5px solid rgb(228, 144, 98);
+    border-radius: 5px;
+}
+
+#img-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#img-wrap img{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 300px;
+    height: 300px;
+}
+
+@media (min-width: 768px)
+{
+    #img-wrap img{
+        width: 600px;
+        height: 600px;
+    }
+}
+
+@media (min-width: 1400px){
+    #img-wrap{
+        flex-direction: row;
+    }
+
+    #img-wrap img{
+        width: 350px;
+        height: 350px;
+    }
+}
