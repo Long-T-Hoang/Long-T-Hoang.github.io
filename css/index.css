@@ -158,6 +158,11 @@ main a
     margin-bottom: 0;
 }
 
+#about img{
+    border: 3px solid black;
+    border-radius: 2px;
+}
+
 #projects h2
 {
     font-size: 200%;
@@ -202,6 +207,7 @@ li p
 
 h3
 {
+    display: none;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -210,18 +216,22 @@ h3
     background: #3ba0ff;
     border: 2px solid orange;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 1px;
     pointer-events: none;
 }
 
 #projects img{
     width: 300px;
     height: 300px;
-    filter: brightness(0.7);
+    transition: 0.5s;
 }
 
-#projects img:hover{
-    filter: brightness(0.3) blur(3px);
+#projects li:hover img{
+    filter: brightness(0.5) blur(3px);
+}
+
+#projects li:hover h3{
+    display: block;
 }
 
 /* Footer */
@@ -276,6 +286,7 @@ a
 {
     text-decoration: none;
     font-weight: bold;
+    transition: 0.5s;
 }
 
 a:focus 
