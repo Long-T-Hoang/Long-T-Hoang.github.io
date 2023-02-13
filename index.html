@@ -16,13 +16,13 @@
     
     <header>
         <h1>
-            <a href = "index.html">Long Hoang</a>
+            <a href = "index.html">Tuan Long Hoang</a>
         </h1>
 
         <nav>
             <ul>
                 <li><a href = "index.html#about">About</a></li>
-                <li><a href = "index.html#projects">Projects</a></li>
+                <li><a href = "projects.html">Projects</a></li>
                 <li><a href = "media/LongHoang_Coop_Resume.pdf" target = _blank>Resume</a></li>
             </ul>
         </nav>
@@ -51,45 +51,86 @@
             </div>
         </section>
 
-        <section id="projects">
+        <section class="entry-group text-entry">
             <h2>
-                Projects
+                Skills
             </h2>
 
             <ul>
                 <li>
-                    <a href="dreamshaper.html">
-                        <h3>Dreamshaper</h3>
-                        <picture>
-                            <source srcset = "media/dreamshaper-300px.png" media = "(max-width: 500px)">
-                            <source srcset = "media/dreamshaper-600px.png" media = "(max-width: 768px)">
-                            <img src="media/dreamshaper-600px.png" alt = "Dreamshaper gravity shifting mechanic">
-                        </picture>
-                    </a>
+                    <span class="entry-label">Programming Languages:</span> C#, C++, C
                 </li>
 
                 <li>
-                    <a href="nier-visualizer.html">
-                        <h3>NieR Visualizer</h3>
-                        <picture>
-                            <source srcset = "media/nier-visualizer-normal-300px.png" media = "(max-width: 500px)">
-                            <source srcset = "media/nier-visualizer-normal-600px.png" media = "(max-width: 768px)">
-                            <img src="media/nier-visualizer-normal-600px.png" alt = "NieR visualizer at normal mode">
-                        </picture>
-                    </a>
+                    <span class="entry-label">Scripting Languages:</span> JavaScript, Python
                 </li>
 
                 <li>
-                    <a href="spearchaser.html">
-                        <h3 >Spear Chaser</h3>
-                        <picture>
-                            <source srcset = "media/spear-chaser-title-300px.PNG" media = "(max-width: 700px)">
-                            <source srcset = "media/spear-chaser-title-600px.PNG">
-                            <img src="media/spear-chaser-title-600px.PNG" alt = "Title for the game Spear Chaser">
-                        </picture>
-                    </a>
+                    <span class="entry-label">Game Engine:</span> Unity, Unreal Engine, Godot
                 </li>
 
+                <li>
+                    <span class="entry-label">Source Controls:</span> Git, GitHub, Perforce
+                </li>
+            </ul>
+        </section>
+
+        <section class="entry-group">
+            <h2>
+                Experiences
+            </h2>
+
+            <ul>
+                <li class="entry">
+                    <img src="media/ChangelingWebLogo2.svg" alt="Changeling VR logo">
+
+                    <div>
+                        <h3><a href="changeling.html">Xana Ad Hoc</a></h3>
+                        <h4><span>Programmer/Level Designer Intern</span> May 2021 - August 2021</h4>
+                        
+                        <ul class="exp-tag">
+                            <li class="engine">Unreal</li>
+                            <li class="misc">VR</li>
+                            <li class="type">Internship</li>
+                        </ul>
+
+                        <ul class="text-detail">
+                            <li><p>Developed a level for the VR Unreal game project Changeling remotely in a team. </p></li>
+                            <li><p>Optimized the technical performance by cleaning up the codes and 
+                                limit graphical rendering to the current area by using Unreal’ Sublevels.</p></li>
+                            <li><p>Executed the initial idea of the level by further improving and expanding the gameplay mechanics, 
+                                and adding verticality to the level design through team collaborations.</p></li>
+                            <li><p>Supported the next team of developers by maintaining and updating the 
+                                documentation of level and gameplay systems.</p></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <hr/>
+                
+                <li class="entry">
+                    <img src="media/eastfog.jpg" alt="EastFog logo">
+
+                    <div>
+                        <h3><a href="https://eastfog.com/">EastFog Game Studios</a></h3>
+                        <h4><span>Game Programmer Intern</span> February 2022 - July 2021</h4>
+                        <ul class="exp-tag">
+                            <li class="engine">Unity</li>
+                            <li class="type">Internship</li>
+                        </ul>
+                        <ul class="text-detail">
+                            <li><p>Developed map editor tool for level designers to design in-game public spaces and for players to 
+                                customize their in-game private spaces using Unity game engine.</p></li>
+                            <li><p>Assisted level designers by crafting and modifying tools based on designers’ 
+                                requests, and fixing bugs that occurred during usage.</p></li>
+                            <li><p>Optimized game performance by overhauling the original source code to render in-game tiles in groups, 
+                                reducing the amount of objects in the game scene, and updating existing mechanics to 
+                                accommodate the overhaul.</p></li>
+                            <li><p>Documented source code and implemented changes, as well as tool usage 
+                                instruction for level designers.</p></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </section>
     </main>

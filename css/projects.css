@@ -1,0 +1,500 @@
+/* General */
+body
+{
+    display: grid;
+    grid-template-areas: 
+                    "header"
+                    "main"
+                    "footer";
+    margin: 0;
+    grid-template-rows: auto auto 100px;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+header, footer
+{
+    background-color: #3ba0ff;
+}
+
+h1, h2, h3, a   
+{
+    font-family: 'Share Tech Mono';
+}
+
+li, p, footer a
+{
+    font-family: 'IBM Plex Mono';
+}
+
+img
+{
+    display: block;
+}
+
+/* Header */
+header
+{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5%;
+    box-shadow: 0 0 5px 1px black;
+    padding-bottom: 2em;
+}
+
+nav
+{
+    flex: 1 0 auto;
+    width: 95%;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li
+{
+    margin: 0 0.5em;
+}
+
+h1
+{
+    color: black;
+    display: block;
+    flex: 1 0 auto;
+    font-size: 120%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+nav a
+{
+    font-size: 100%;
+}
+
+/* Main */
+main
+{
+    grid-area: main;
+    margin: 0;
+    padding: 2em 0.5em;
+    background-color: white;
+    border-radius: 0.1em;
+    display: grid;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    margin: 0;
+}
+
+.entry-group{
+    margin-bottom: 2rem;
+}
+
+.entry-group>p:first-of-type
+{
+    text-indent: 2em;
+}
+
+.entry-group li:nth-last-child(1)
+{
+    margin-bottom: 0;
+}
+
+.entry-group img
+{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 0.1em;
+}
+
+.text-entry ul li{
+    position: relative;
+    justify-self: center;
+    align-self: stretch;
+    margin-bottom: 10px;
+}
+
+.entry-label{
+    font-weight: bold;
+}
+
+.entry{
+    display: flex;
+    gap: 50px;
+    justify-content: flex-start;
+    margin-bottom: 5vh;
+}
+
+h4{
+    font-weight: lighter;
+}
+
+h4 span{
+    font-weight: bold;
+}
+
+.entry img{
+    background-color: black;
+}
+
+ul.text-detail{
+    list-style: square;
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+.exp-tag{
+    display: flex;
+    gap: 10px;
+}
+
+.exp-tag li{
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px;
+}
+
+li.engine{
+    background-color: rgb(51, 185, 242);
+}
+
+li.type{
+    background-color: rgb(30, 198, 30);
+}
+
+li.misc{
+    background-color: rgb(234, 122, 144);
+}
+
+hr{
+    margin: 30px 10px;
+}
+/* Footer */
+footer
+{
+    height: 25vh;
+    grid-area: footer;
+    border-top: 0.5px solid #127ce0;
+    box-shadow: 0 0 5px 1px black;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+footer p
+{
+    display: inline;
+    font-weight: bold;
+}
+
+#footer-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+}
+
+#contact li
+{   
+    margin: 0.5em 0;
+}
+
+footer h2 
+{
+    margin: 0.5em 0;
+}
+
+
+#website-links ul
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#website-links li
+{
+    margin: 0 1em;
+}
+
+/* Links */
+a
+{
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+a:focus 
+{
+    outline: none;
+}
+
+h1 a:link
+{
+    color: black;
+}
+
+h1 a:visited
+{
+    color: black;
+}
+
+h1 a:focus
+{
+    color: black;
+}
+
+h1 a:hover
+{
+    color: black;
+}
+
+h1 a:active
+{
+    color: black;
+}
+
+nav a
+{
+    color: black;
+}
+
+nav a:link
+{
+    color: black;
+}
+
+nav a:visited
+{
+    color: purple;
+}
+
+nav a:focus
+{
+    color: white;
+    background-color: #1f6db6;
+    padding: 0.2em;
+}
+
+nav a:hover
+{
+    color: white;
+    background-color: #1f6db6;
+    padding: 0.2em;
+}
+
+nav a:active
+{
+    color: yellow;
+}
+
+#contact a:link
+{
+    border-radius: 0.1em;
+    padding: 0.2em;
+    color: white;
+    font-weight: normal;
+}
+
+#contact a:visited
+{
+    color: #2678c5;
+}
+
+#contact a:focus
+{
+    color: white;
+    background-color: #1f6db6;
+}
+
+#contact a:hover
+{
+    color: white;
+    background-color: #1f6db6;
+}
+
+#contact a:active
+{
+    color: rgb(171, 187, 31);
+}
+
+/* Responsive */
+@media (min-width: 450px)
+{
+    main
+    {
+        padding: 2em;
+    }
+}
+
+@media (min-width: 600px)
+{
+    nav
+    {
+        margin: 0 2em;
+    }
+    
+    h1
+    {
+        margin-top: 1em;
+        font-size: 200%;
+    }
+
+    main
+    {
+        margin: 5vw;
+    }
+
+    #about ul
+    {
+        flex-direction: row;
+    }
+
+    #about li
+    {
+        padding: 0 1em;
+        border-right: 2px solid black;
+    }
+
+    footer h2
+    {
+        text-align: left;
+        font-size: 170%;
+        border-bottom: 3px solid black;
+    }
+
+    #footer-wrapper
+    {
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0 5em;
+    }
+
+    #contact
+    {
+        margin: 0;
+    }
+}
+
+@media (min-width: 800px)
+{
+    h1
+    {
+        margin: 0;
+        font-size: 200%;
+    }
+
+    header
+    {
+        flex-direction: row;
+        padding: 4em 10%;
+    }
+
+    nav
+    {
+        width: 25%;
+        margin: 0;
+    }
+
+    main
+    {
+        padding: 2em 0;
+        margin: 5% 10%;
+        margin-bottom: 0;
+        grid-template-rows: auto auto;
+    }
+
+    #website-links li
+    {
+        margin: 0 1em;
+    }
+
+    .entry-group ul{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px)
+{
+    header
+    {
+        padding: 1em 10%;
+    }
+
+    header a
+    {
+        padding: 0.2em;
+    }
+
+    main
+    {
+        margin: 5% 10%;
+        padding-bottom: 0;
+    }
+
+    section
+    {
+        padding: 0 5em;
+    }
+
+    #about
+    {
+        padding: 0 1em 3em;
+        flex-direction: row;
+    }
+    
+    #about p
+    {
+        margin: 0.5em 2em 0; 
+    }
+
+    #about h2
+    {
+        margin-top: 0;
+    }
+
+    .entry-group{
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 1400px)
+{
+    .entry-group img{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 1500px)
+{
+    header
+    {
+        padding: 1.5em 20%;
+        font-size: 150%;
+    }
+
+    main
+    {
+        padding-top: 1em;
+        margin: 2% 10%;
+    }
+}
